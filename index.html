@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Etch A Sketch</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header id="nav">
+        <fieldset class="mode">
+            <legend>Mode</legend>
+            <button id="clickMode" class="modeBtn">Click</button><button id="hoverMode" class="modeBtn">Hover</button>
+        </fieldset>
+      <fieldset>
+        <legend>Size</legend>
+        <input type="number" id="size" placeholder="16" min="1" max="100" />
+        <button id="sizeBtn">Enter</button>
+      </fieldset>
+      <fieldset>
+        <legend>Style</legend>
+        <button id="blackBtn">Black</button>
+        <button id="randomBtn">Random</button>
+        <button id="eraseBtn">Erase</button>
+      </fieldset>
+      <fieldset>
+        <legend>Reset</legend>
+        <p>Sure you want to reset?</p>
+        <button id="reset">Reset</button>
+      </fieldset>
+    </header>
+    <main id="gridDisplay">
+      <div class="container">TEST</div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
