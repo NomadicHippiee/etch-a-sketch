@@ -47,7 +47,7 @@ function applyTool(square) {
     const b = Math.floor(Math.random() * 256);
     square.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
   } else if (currentTool === "erase") {
-    square.style.backgroundColor = "white";
+    square.style.backgroundColor = "#f9f7f0";
   }
 }
 

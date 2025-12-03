@@ -1,5 +1,5 @@
 * {
-  outline: 1px dotted red;
+
   margin: 0px;
   padding: 0px;
 }
@@ -8,13 +8,16 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: row-reverse;
+  background: #AD9BB1;
+ background: #F9F7F0;
+background: radial-gradient(circle, rgba(249, 247, 240, 1) 10%, rgba(225, 218, 220, 1) 36%, rgba(206, 195, 205, 1) 62%, rgba(189, 174, 190, 1) 90%, rgba(173, 155, 177, 1) 100%);
 }
-
 #gridDisplay {
   flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
 .container {
@@ -23,26 +26,34 @@ body {
   height: 600px;
   width: 600px;
   overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
+
+
 
 .square {
   flex: 0 0 auto;
   aspect-ratio: 1 / 1;
-  background-color: white;
+  background-color:#f9f7f0 ;
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
-  background-color: lightgray;
   border: none;
-  outline: none;
+
 }
 
 #nav {
   display: flex;
   flex-direction: column;
+  background-color: #183958;
   padding: 10px;
   gap: 15px;
   justify-content: center;
+  color: #FFEE7B;
+    font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 fieldset {
@@ -50,7 +61,9 @@ fieldset {
   flex-direction: column;
   gap: 5px;
   padding: 10px;
-  outline: none;
+  color: #FFEE7B;
+
+
 }
 
 .mode {
@@ -60,4 +73,41 @@ fieldset {
 
 .modeBtn {
   flex: 1;
+}
+
+#size {
+
+  background: none;
+  border: none;
+  outline: none;
+  max-width: 190px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+  color: #FFEE7B;
+
+
+}
+
+
+button {
+  background-color: #222;
+  border-radius: 4px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFEE7B;
+  cursor: pointer;
+  display: inline-block;
+  padding: 9px 20px 8px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: center;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+
 }
